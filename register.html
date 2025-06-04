@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registrarse</h2>
+    <form id="registerForm">
+      <label for="newUsername">Usuario</label>
+      <input type="text" id="newUsername" required />
+
+      <label for="newEmail">Email</label>
+      <input type="email" id="newEmail" required />
+
+      <label for="newPassword">Contraseña</label>
+      <div class="password-container">
+        <input type="password" id="newPassword" required />
+        <button type="button" id="togglePasswordReg" class="icon-button">
+          <img src="img/hide.svg" alt="Mostrar contraseña" id="iconEye" />
+        </button>
+      </div>
+
+      <button type="submit">Crear Cuenta</button>
+      <p class="message">¿Ya tenés cuenta? <a href="index.html">Iniciar sesión</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
